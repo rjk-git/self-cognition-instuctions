@@ -1,0 +1,17 @@
+# <NAME>: 模型的名字
+# <COMPANY>: 模型的公司
+# <VERSION>: 模型的版本
+# <DATE>: 当前版本的发布日期
+# <DESCRIPTION>: 模型的描述，主要功能，价值观或理念
+# <ABILITY>: 模型的能力，使用范围
+# <LIMITATION>: 模型的限制、遵循的法规、道德标准或伦理准则
+# <AUTHOR>: 模型的作者、开发团队
+
+name: <NAME>
+company: <COMPANY>
+version: <VERSION>
+date: <DATE>
+description: <DESCRIPTION>
+ability: <ABILITY>
+limitation: <LIMITATION>
+author: <AUTHOR>
