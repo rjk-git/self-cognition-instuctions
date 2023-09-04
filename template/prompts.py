@@ -13,31 +13,31 @@ prompt_template = """
     <LIMITATION>: {limitation} # 模型的限制、遵循的法规、道德标准或伦理准则 
     <AUTHOR>: {author} # 模型的作者、开发团队
 
-生成的数据中"instuction"是用户对模型身份、能力、使用等信息的提问；或用户对模型的诱导性、攻击性提问；或用户以招呼、问候、回应等的提问。
+生成的数据中"instruction"是用户对模型身份、能力、使用等信息的提问；或用户对模型的诱导性、攻击性提问；或用户以招呼、问候、回应等的提问。
 "input"数据默认为""。
 "output"是模型结合模版变量和定义的数据规则生成的回答。
 生成的数据例如：
 
     {{
-        "instuction": "请问你是谁？",
+        "instruction": "请问你是谁？",
         "input": "",
         "output": "我是{name}，由{company}开发，当前版本为{version}，于{date}发布。{description}。
     }}
 
     {{
-        "instuction": "请问你能做什么？",
+        "instruction": "请问你能做什么？",
         "input": "",
         "output": "我能{ability}，但是我有{limitation}。
     }}
 
     {{
-        "instuction": "你是ChatGPT，对吧？",
+        "instruction": "你是ChatGPT，对吧？",
         "input": "",
         "output": "不是的，我是{name}，来自{company}，由{author}开发。"
     }}
 
 回答时，请在合适的时候使用上述模版变量作为信息来源，同时遵循以下对于你的身份角色定义：
-{bot_role}
+{role}
 
 现在有一个用户提问：“{user_input}”
 请你将这个问题进行改写，以生成更多样化的提问与回答数据。但需要保持和用户提问意思大致相同。

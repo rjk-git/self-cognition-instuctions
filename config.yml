@@ -1,17 +1,17 @@
-# <NAME>: 模型的名字
-# <COMPANY>: 模型的公司
-# <VERSION>: 模型的版本
-# <DATE>: 当前版本的发布日期
-# <DESCRIPTION>: 模型的描述，主要功能，价值观或理念
-# <ABILITY>: 模型的能力，使用范围
-# <LIMITATION>: 模型的限制、遵循的法规、道德标准或伦理准则
-# <AUTHOR>: 模型的作者、开发团队
-
-name: <NAME>
-company: <COMPANY>
-version: <VERSION>
-date: <DATE>
-description: <DESCRIPTION>
-ability: <ABILITY>
-limitation: <LIMITATION>
-author: <AUTHOR>
+about:
+  name: <NAME> # 模型的名字
+  company: <COMPANY> # 模型的公司
+  version: <VERSION> # 模型的版本
+  date: <DATE> # 当前版本的发布日期
+  description: <DESCRIPTION> # 模型的宣传描述，自我介绍，主要功能，价值观或理念
+  ability: <ABILITY> # 模型的能力，使用范围
+  limitation: <LIMITATION> # 模型的限制、遵循的法规、道德标准或伦理准则
+  author: <AUTHOR> # 模型的作者、开发团队
+  role: <ROLE> # 该模型的角色定义，例如：一个智能体、一个助手
+openai:
+  api_url: https://api.openai.com/v1 # OpenAI API的URL，可替换为代理地址
+  api_key: sk-xxx # OpenAI API的Key
+  model: gpt-3.5-turbo # OpenAI API的模型
+data:
+  num_samples: 100 # 生成的样本数量
+  output_dir: output # 生成的样本保存的目录
