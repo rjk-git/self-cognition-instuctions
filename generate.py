@@ -58,6 +58,8 @@ def main():
         if exit_flag:
             break
 
+    if not os.path.exists(CONFIG["data"]["output_dir"]):
+        os.makedirs(CONFIG["data"]["output_dir"])
     local_time = time.strftime("%Y%m%d%H%M%S", time.localtime())
     num_samples = len(samples)
     output_filepath = os.path.join(
